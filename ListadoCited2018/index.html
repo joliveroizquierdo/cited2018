@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+
+	<main>
+
+		<!--<div class="targeta" v-for="inscripcion in inscripciones">
+			 <h3>{{ inscripcion.nombres }}</h3><hr>
+			<div><b>Email:</b> <input type="text" :value="inscripcion.correo" readonly></div>	
+			<div><b>País:</b> <input type="text" :value="inscripcion.pais" readonly></div>
+			<div><b>Ciudad:</b> <input type="text" :value="inscripcion.ciudad" readonly></div>
+			<div><b>Departamento:</b> <input type="text" :value="inscripcion.departamento" readonly></div>
+			<div><b>Teléfono:</b> <input type="text" :value="inscripcion.telefono" readonly></div>
+			<div><b>Celular:</b> <input type="text" :value="inscripcion.celular" readonly></div>
+			<div><b>Institución:</b> <input type="text" :value="inscripcion.institucion" readonly></div>
+			<div><b>Modadlidad:</b> <input type="text" :value="inscripcion.modalidad" readonly></div>
+			<div><b>Comunidad:</b> <input type="text" :value="inscripcion.comunidad" readonly></div>
+			<div><b>Resumén:</b> <input type="text" :value="inscripcion.resumen" readonly></div> -->
+			<div class="panel panel-default">
+
+				<div class="panel-heading">Listado de Inscritos</div>
+			  
+				<table class="table table-striped table-bordered table-hover">
+
+					<thead>
+			
+						<tr>
+			
+							<th>Nombre</th>
+							<th>Email</th>
+							<th>País</th>
+							<th>Ciudad</th>
+							<th>Departamento</th>
+							<th>Teléfono</th>
+							<th>Celular</th>
+							<th>Institución</th>
+							<th>Modadlidad</th>
+							<th>Comunidad</th>
+							<th>Resumén</th>
+							<!-- <th>Pago</th> -->
+							
+						</tr>
+			
+					</thead>
+			
+					<tbody> 
+			
+						<tr v-for="inscripcion in inscripciones">
+			
+							<td>{{ inscripcion.nombres }}</td>
+							<td>{{ inscripcion.correo }}</td>	
+							<td>{{ inscripcion.pais }}</td>		
+							<td>{{ inscripcion.ciudad }}</td>	
+							<td>{{ inscripcion.departamento }}</td>	
+							<td>{{ inscripcion.telefono }}</td>	
+							<td>{{ inscripcion.celular }}</td>	
+							<td>{{ inscripcion.institucion }}</td>	
+							<td>{{ inscripcion.modalidad }}</td>	
+							<td>{{ inscripcion.comunidad }}</td>	
+							<td>{{ inscripcion.resumen }}</td>
+							<!-- <td>{{ inscripcion.pago }}</td>	 -->
+			
+						</tr>
+			
+					<tbody>
+			
+				</table>
+
+		    </div>
+
+		<!-- <pre>{{ $data }}</pre> -->
+
+
+	</main>
+
+	<script src="vue.js"></script>
+</body>
+</html>
+
